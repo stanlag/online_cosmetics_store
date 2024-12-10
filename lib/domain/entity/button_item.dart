@@ -1,5 +1,5 @@
 class ButtonItem {
   final String title;
-  final Function() onPress;
+  final void Function() onPress;
   ButtonItem({required this.title, required this.onPress});
 }
