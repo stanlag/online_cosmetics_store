@@ -3,7 +3,7 @@ import 'package:online_cosmetics_store/assets/colors/app_colors.dart';
 import 'package:online_cosmetics_store/assets/res/app_strings.dart';
 import 'package:online_cosmetics_store/presentation/main_screen.dart';
 import 'package:online_cosmetics_store/presentation/search_screen.dart';
-import '../widgets/empty_widget.dart';
+import 'package:online_cosmetics_store/widgets/empty_widget.dart';
 
 class TabScreen extends StatefulWidget {
   const TabScreen({super.key});

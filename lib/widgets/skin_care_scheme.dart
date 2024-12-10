@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_cosmetics_store/assets/res/app_strings.dart';
 import 'package:online_cosmetics_store/widgets/card_product_image.dart';
-
 import 'package:online_cosmetics_store/assets/colors/app_colors.dart';
 import 'package:online_cosmetics_store/assets/res/app_assets.dart';
 import 'package:online_cosmetics_store/domain/entity/cards_product.dart';

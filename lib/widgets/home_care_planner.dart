@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:online_cosmetics_store/assets/res/app_strings.dart';
-import 'package:online_cosmetics_store/widgets/card_product_image.dart';
-
 import 'package:online_cosmetics_store/assets/colors/app_colors.dart';
 import 'package:online_cosmetics_store/assets/res/app_assets.dart';
-import 'package:online_cosmetics_store/domain/entity/cards_product.dart';
-import 'package:online_cosmetics_store/utils/download_product.dart';
-import 'error_widget.dart';
-import 'loading_widget.dart';
 
 class HomeCarePlanner extends StatelessWidget {
   const HomeCarePlanner({super.key});

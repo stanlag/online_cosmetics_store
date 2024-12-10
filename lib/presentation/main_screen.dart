@@ -10,14 +10,11 @@ import 'package:online_cosmetics_store/assets/res/app_strings.dart';
 import 'package:online_cosmetics_store/domain/entity/enum/product_filter.dart';
 import 'package:online_cosmetics_store/utils/filters_product.dart';
 import 'package:online_cosmetics_store/widgets/button_grid.dart';
-
-import '../utils/download_product.dart';
-import '../widgets/skin_care_scheme.dart';
-
-
+import 'package:online_cosmetics_store/utils/download_product.dart';
+import 'package:online_cosmetics_store/widgets/skin_care_scheme.dart';
 
 class MainScreen extends StatelessWidget {
-   const MainScreen({super.key});
+  const MainScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,21 +54,24 @@ class MainScreen extends StatelessWidget {
           ),
           ProductListWidget(
             title: AppStrings.news,
-            products: FiltersProduct.filterProductsByCase(ProductFilter.newProducts, MockData.products),
+            products: FiltersProduct.filterProductsByCase(
+                ProductFilter.newProducts, MockData.products),
             startGradientColor: AppColors.white,
             endGradientColor: AppColors.turquoise,
           ),
           SkinCareScheme(cardProduct: MockData.skinCareScheme),
           ProductListWidget(
             title: AppStrings.sale,
-            products: FiltersProduct.filterProductsByCase(ProductFilter.saleProducts, MockData.products),
+            products: FiltersProduct.filterProductsByCase(
+                ProductFilter.saleProducts, MockData.products),
             startGradientColor: AppColors.white,
             endGradientColor: AppColors.lilac,
           ),
           const ButtonGrid(),
           ProductListWidget(
             title: AppStrings.hit,
-            products: FiltersProduct.filterProductsByCase(ProductFilter.hitProducts, MockData.products),
+            products: FiltersProduct.filterProductsByCase(
+                ProductFilter.hitProducts, MockData.products),
             startGradientColor: AppColors.white,
             endGradientColor: AppColors.orange,
           )

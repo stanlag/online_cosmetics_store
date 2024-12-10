@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:online_cosmetics_store/data/mock_data.dart';
 import 'package:online_cosmetics_store/domain/entity/products.dart';
 import 'package:online_cosmetics_store/utils/download_product.dart';
-
-import '../assets/colors/app_colors.dart';
-import '../assets/text/text_style.dart';
-import '../assets/text/text_style.dart';
-import '../assets/text/text_style.dart';
+import 'package:online_cosmetics_store/assets/colors/app_colors.dart';
 import 'error_widget.dart';
 import 'image_product_widget.dart';
 import 'loading_widget.dart';
@@ -30,14 +25,14 @@ class ProductListWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
-         crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Заголовок
           Text(
             title,
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
-              color: AppColors.black,
-            ),
+                  color: AppColors.black,
+                ),
           ),
           const SizedBox(height: 8),
           // Градиентная линия

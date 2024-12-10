@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_cosmetics_store/domain/entity/products.dart';
-
-import '../assets/colors/app_colors.dart';
+import 'package:online_cosmetics_store/assets/colors/app_colors.dart';
 
 class ProductImage extends StatelessWidget {
   const ProductImage({super.key, required this.product});

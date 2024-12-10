@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:online_cosmetics_store/assets/res/app_strings.dart';
 
 /// Отображение ошибки

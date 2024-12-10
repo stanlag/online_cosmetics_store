@@ -70,6 +70,15 @@ abstract class AppStrings {
   static const consultation = 'Консультация с косметологом';
 
 
+  // типы  кожи
+  static const oilySkin = 'Жирная кожа';
+  static const combinationSkin = 'Комбинированная кожа';
+  static const normalSkin = 'Нормальная кожа';
+  static const drySkin = 'Сухая кожа';
+  static const anySkinType = 'Любой тип кожи';
+
+
+
 
 
 }

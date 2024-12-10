@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_cosmetics_store/domain/entity/cards_product.dart';
-
-import '../assets/colors/app_colors.dart';
+import 'package:online_cosmetics_store/assets/colors/app_colors.dart';
 
 class CardProductImage extends StatelessWidget {
   const CardProductImage({super.key, required this.cardProduct});
@@ -23,9 +22,10 @@ class CardProductImage extends StatelessWidget {
             child: Image(image: AssetImage(cardProduct.image)),
           ),
         ),
-        Text(cardProduct.name,style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-          color: AppColors.black,
-        )),
+        Text(cardProduct.name,
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: AppColors.black,
+                )),
       ],
     );
   }

@@ -6,6 +6,16 @@ abstract class AppThemeData {
   static final ThemeData lightTheme =
       ThemeData.light(useMaterial3: false).copyWith(
           scaffoldBackgroundColor: AppColors.white,
+          appBarTheme: const AppBarTheme(
+              centerTitle: true,
+              backgroundColor: AppColors.white,
+              foregroundColor: AppColors.black,
+              elevation: 0,
+              titleTextStyle: TextStyle(
+                color: Colors.black, fontSize: 20,
+                fontWeight: FontWeight.w600,
+                fontFamily: 'Sora',
+              )),
           textTheme: AppTextTheme.appTextTheme,
           outlinedButtonTheme: OutlinedButtonThemeData(
             style: ButtonStyle(
@@ -28,17 +38,14 @@ abstract class AppThemeData {
               backgroundColor: WidgetStateProperty.all<Color>(AppColors.black),
             ),
           ),
-      textButtonTheme: const TextButtonThemeData(
-        style: ButtonStyle(
-          backgroundColor: WidgetStatePropertyAll(AppColors.white),
-          foregroundColor: WidgetStatePropertyAll(AppColors.black),
-          textStyle: WidgetStatePropertyAll( TextStyle(
-            color: AppColors.black,
-            fontSize: 20,
-            fontWeight: FontWeight.w400,
-          )),
-        )
-
-      )
-      );
+          textButtonTheme: const TextButtonThemeData(
+              style: ButtonStyle(
+            backgroundColor: WidgetStatePropertyAll(AppColors.white),
+            foregroundColor: WidgetStatePropertyAll(AppColors.black),
+            textStyle: WidgetStatePropertyAll(TextStyle(
+              color: AppColors.black,
+              fontSize: 20,
+              fontWeight: FontWeight.w400,
+            )),
+          )));
 }

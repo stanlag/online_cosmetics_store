@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:online_cosmetics_store/assets/res/app_strings.dart';
-
-import '../widgets/home_care_planner.dart';
+import 'package:online_cosmetics_store/presentation/subtype_sort_screen.dart';
+import 'package:online_cosmetics_store/utils/subtype_sort.dart';
+import 'package:online_cosmetics_store/widgets/home_care_planner.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -37,7 +38,15 @@ class SearchScreen extends StatelessWidget {
           ),
           _BuildButton(
             name: AppStrings.skinType,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SubtypeSortScreen(
+                      buttonList: SubtypeSort.buttonListSkinType),
+                ),
+              );
+            },
           ),
           _BuildButton(
             name: AppStrings.cosmeticLine,
