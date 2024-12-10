@@ -13,7 +13,7 @@ class TabScreen extends StatefulWidget {
 }
 
 class _TabScreenState extends State<TabScreen> {
-  int selectedIndex = 1;
+  int selectedIndex = 0;
   final List<Widget> widgetOptions = <Widget>[
     const MainScreen(),
     const SearchScreen(),
